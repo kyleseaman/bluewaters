@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 const links = [
   ["Stay", "#highlights"],
-  ["Cottages", "#cottages"],
+  ["Cottages", "#cottages-gallery"],
+  ["Pool", "#pool"],
   ["Rates", "#rates"],
-  ["Gallery", "#gallery"],
   ["Location", "#location"],
   ["FAQ", "#faq"],
   ["Contact", "#contact"],
@@ -24,13 +25,20 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
-      <div className="container nav-wrap">
-        <a href="#top" className="brand">Blue Waters Cottages</a>
+    <header
+      className={cn(
+        "sticky top-0 z-30 bg-transparent transition-all duration-200",
+        scrolled && "border-b border-border bg-background/96 backdrop-blur-md"
+      )}
+    >
+      <div className="mx-auto flex min-h-16 w-[min(1080px,92%)] items-center justify-between gap-4">
+        <a href="#top" className="font-bold text-primary no-underline">
+          Blue Waters Cottages
+        </a>
 
         <button
           type="button"
-          className="mobile-toggle"
+          className="inline-block rounded-full border border-border px-3 py-2 font-semibold text-primary md:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-nav"
           onClick={() => setMobileOpen((prev) => !prev)}
@@ -38,19 +46,27 @@ export function Header() {
           Menu
         </button>
 
-        <nav className="desktop-nav">
+        <nav className="hidden flex-wrap gap-3 md:flex">
           {links.map(([label, href]) => (
-            <a key={href} href={href} className="nav-link">{label}</a>
+            <a key={href} href={href} className="text-sm text-muted-foreground no-underline hover:text-foreground">
+              {label}
+            </a>
           ))}
         </nav>
 
-        <a href="#contact" className="button button-small">Check Availability</a>
       </div>
 
       {mobileOpen && (
-        <nav id="mobile-nav" className="mobile-nav container" aria-label="Mobile">
+        <nav id="mobile-nav" className="mx-auto flex w-[min(1080px,92%)] flex-wrap gap-2 pb-3 md:hidden" aria-label="Mobile">
           {links.map(([label, href]) => (
-            <a key={href} href={href} className="nav-link" onClick={() => setMobileOpen(false)}>{label}</a>
+            <a
+              key={href}
+              href={href}
+              className="text-sm text-muted-foreground no-underline hover:text-foreground"
+              onClick={() => setMobileOpen(false)}
+            >
+              {label}
+            </a>
           ))}
         </nav>
       )}

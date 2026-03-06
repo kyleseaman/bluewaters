@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { cottageImages } from "@/content/gallery";
+import { poolImages } from "@/content/gallery";
 import { Button } from "@/components/ui/button";
 
-export function Gallery() {
+export function Pool() {
   const [active, setActive] = useState<number | null>(null);
 
   useEffect(() => {
@@ -14,10 +14,10 @@ export function Gallery() {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setActive(null);
       if (event.key === "ArrowRight") {
-        setActive((current) => (current === null ? 0 : (current + 1) % cottageImages.length));
+        setActive((current) => (current === null ? 0 : (current + 1) % poolImages.length));
       }
       if (event.key === "ArrowLeft") {
-        setActive((current) => (current === null ? 0 : (current - 1 + cottageImages.length) % cottageImages.length));
+        setActive((current) => (current === null ? 0 : (current - 1 + poolImages.length) % poolImages.length));
       }
     };
 
@@ -25,24 +25,24 @@ export function Gallery() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  const next = () => setActive((current) => (current === null ? 0 : (current + 1) % cottageImages.length));
-  const prev = () => setActive((current) => (current === null ? 0 : (current - 1 + cottageImages.length) % cottageImages.length));
+  const next = () => setActive((current) => (current === null ? 0 : (current + 1) % poolImages.length));
+  const prev = () => setActive((current) => (current === null ? 0 : (current - 1 + poolImages.length) % poolImages.length));
 
   return (
-    <section id="cottages-gallery" className="bg-muted py-20">
+    <section id="pool" className="py-20">
       <div className="mx-auto w-[min(1080px,92%)]">
         <h2 className="mb-4 text-[clamp(1.6rem,2.2vw,2.2rem)] text-primary">
-          Inside the cottages
+          Pool & hot tub
         </h2>
         <p className="mb-6 max-w-[65ch] text-lg text-muted-foreground">
-          Each cottage features pine ceilings, a full kitchen, comfortable bedrooms, and a private verandah with BBQ.
+          Relax in the heated outdoor pool or unwind in the hot tub after a day at the beach.
         </p>
-        <div className="columns-2 gap-3 md:columns-3 lg:columns-4">
-          {cottageImages.map((img, i) => (
+        <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-4">
+          {poolImages.map((img, i) => (
             <button
               type="button"
               key={img.src}
-              className="mb-3 block w-full cursor-pointer overflow-hidden rounded-lg border border-border bg-transparent p-0 text-left break-inside-avoid"
+              className="cursor-pointer overflow-hidden rounded-lg border border-border bg-transparent p-0 text-left"
               onClick={() => setActive(i)}
               aria-label={`View: ${img.alt}`}
             >
@@ -51,7 +51,7 @@ export function Gallery() {
                 alt={img.alt}
                 width={img.width}
                 height={img.height}
-                className="w-full transition-transform hover:scale-105"
+                className="aspect-[4/3] w-full object-cover transition-transform hover:scale-105"
               />
             </button>
           ))}
@@ -71,10 +71,10 @@ export function Gallery() {
                 <Button variant="secondary" size="sm" onClick={() => setActive(null)} aria-label="Close gallery">Close</Button>
               </div>
               <Image
-                src={cottageImages[active].src}
-                alt={cottageImages[active].alt}
-                width={cottageImages[active].width}
-                height={cottageImages[active].height}
+                src={poolImages[active].src}
+                alt={poolImages[active].alt}
+                width={poolImages[active].width}
+                height={poolImages[active].height}
                 className="w-full rounded-xl"
               />
             </div>

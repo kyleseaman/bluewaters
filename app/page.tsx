@@ -5,6 +5,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Gallery } from "@/components/sections/Gallery";
 import { Hero } from "@/components/sections/Hero";
 import { Highlights } from "@/components/sections/Highlights";
+import { Pool } from "@/components/sections/Pool";
 import { RatesSeason } from "@/components/sections/RatesSeason";
 import { Header } from "@/components/ui/Header";
 import { faqSchema, lodgingSchema } from "@/lib/schema";
@@ -19,8 +20,9 @@ export default function HomePage() {
         <Hero />
         <Highlights />
         <Cottages />
-        <RatesSeason />
         <Gallery />
+        <Pool />
+        <RatesSeason />
         <AreaGuide />
         <FAQ />
         <Contact />

@@ -1,11 +1,13 @@
 export const siteContent = {
   name: "Blue Waters Executive Cottages",
-  tagline: "Quiet coastal stays near Brackley Beach, PEI",
+  tagline: "Brackley Beach, Prince Edward Island",
   heroTitle: "A peaceful PEI cottage escape close to beach, trails, and Charlottetown",
   heroSubtitle:
-    "Stay on a private 10-acre setting with bay views, heated pool and hot tub access, and quick access to Prince Edward Island National Park.",
-  ctaPrimary: "Check Availability",
-  ctaSecondary: "View the Cottages",
+    "Blue Waters Executive Cottages are located in Brackley Beach, overlooking Brackley Bay and just minutes from the beautiful north shore beaches of Prince Edward Island.",
+  description:
+    "Located on ten acres with spacious treed lawn, outdoor deck, play area, heated swimming pool, and heated whirlpool. Features a century farmhouse and three two-bedroom executive cottages.",
+  license: "PEI Lic # 2200013",
+  rating: "Canada Select 3.5 Stars",
   contact: {
     email: "bluewaterscottages@gmail.com",
     phonePrimary: "902-672-2720",
@@ -18,8 +20,16 @@ export const siteContent = {
       addressCountry: "CA",
     },
   },
-  seasonWindow: "Open June 1 – October 17",
-  trustBullets: ["4 guests", "2 bedrooms", "1 bath", "Bay view"],
+  seasonWindow: "Open June to October",
+  trustBullets: ["3 cottages", "2 bedrooms each", "Sleeps 4", "Bay views"],
+  propertyHighlights: [
+    "All accommodations non-smoking",
+    "Laundry, washroom & shower by pool",
+    "15 km from airport and Charlottetown",
+    "40 minutes from Confederation Bridge",
+    "Short drive to National Park beaches",
+    "Canada Select 3.5 Stars",
+  ],
 };
 
 export const fullAddress = [
