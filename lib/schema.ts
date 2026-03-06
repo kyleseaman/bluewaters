@@ -10,11 +10,7 @@ export const lodgingSchema = {
   email: siteContent.contact.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "3694 Brackley Point Road",
-    addressLocality: "Brackley Beach",
-    addressRegion: "PE",
-    postalCode: "C1E 2N3",
-    addressCountry: "CA",
+    ...siteContent.contact.address,
   },
 };
 

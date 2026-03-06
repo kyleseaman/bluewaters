@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { siteContent } from "@/content/site";
+import { fullAddress, siteContent } from "@/content/site";
 
 type FormStatus =
   | { type: "idle" }
@@ -54,6 +54,7 @@ export function Contact() {
             <p><strong>Email:</strong> <a href={`mailto:${siteContent.contact.email}`}>{siteContent.contact.email}</a></p>
             <p><strong>Phone:</strong> <a href={`tel:${siteContent.contact.phonePrimary}`}>{siteContent.contact.phonePrimary}</a></p>
             <p><strong>Phone (alt):</strong> <a href={`tel:${siteContent.contact.phoneSecondary}`}>{siteContent.contact.phoneSecondary}</a></p>
+            <p><strong>Address:</strong> {fullAddress}</p>
             <p><strong>Season:</strong> {siteContent.seasonWindow}</p>
           </div>
           <form onSubmit={onSubmit} className="contact-form" noValidate>
