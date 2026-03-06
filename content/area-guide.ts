@@ -5,7 +5,7 @@ export const areaGuide = [
   },
   {
     title: "Cycling & Trails",
-    description: "Explore nearby bike paths and scenic coastal drives around Brackley and North Shore communities.",
+    description: "Bike directly to PEI National Park and explore scenic coastal trails along the North Shore. Many guests bring their bikes to enjoy the area's excellent cycling routes.",
   },
   {
     title: "Dining & Charlottetown",

@@ -37,7 +37,7 @@ export function Contact() {
     const result = (await response.json()) as { ok: boolean; error?: string };
 
     if (!response.ok || !result.ok) {
-      setStatus({ type: "error", message: result.error || "Something went wrong. Please call or email us." });
+      setStatus({ type: "error", message: result.error || "Something went wrong. Please email us directly." });
       return;
     }
 
@@ -52,13 +52,11 @@ export function Contact() {
           Contact & availability
         </h2>
         <p className="max-w-[65ch] text-lg text-muted-foreground">
-          Call, email, or send a quick inquiry below.
+          Email us or send a quick inquiry below.
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-xl border border-border bg-card p-4">
             <p><strong>Email:</strong> <a href={`mailto:${siteContent.contact.email}`} className="text-primary hover:underline">{siteContent.contact.email}</a></p>
-            <p><strong>Phone:</strong> <a href={`tel:${siteContent.contact.phonePrimary}`} className="text-primary hover:underline">{siteContent.contact.phonePrimary}</a></p>
-            <p><strong>Phone (alt):</strong> <a href={`tel:${siteContent.contact.phoneSecondary}`} className="text-primary hover:underline">{siteContent.contact.phoneSecondary}</a></p>
             <p><strong>Address:</strong> {fullAddress}</p>
             <p><strong>Season:</strong> {siteContent.seasonWindow}</p>
           </div>
@@ -86,7 +84,7 @@ export function Contact() {
 
             {status.type === "success" && (
               <p className="font-semibold text-green-700" role="status">
-                Thanks! Your request was sent. Please also call or email for the fastest response.
+                Thanks! Your request was sent. We'll get back to you as soon as possible.
               </p>
             )}
 

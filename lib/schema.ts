@@ -6,7 +6,6 @@ export const lodgingSchema = {
   "@type": "LodgingBusiness",
   name: siteContent.name,
   description: siteContent.heroSubtitle,
-  telephone: [siteContent.contact.phonePrimary, siteContent.contact.phoneSecondary],
   email: siteContent.contact.email,
   address: {
     "@type": "PostalAddress",
