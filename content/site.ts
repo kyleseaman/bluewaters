@@ -7,11 +7,8 @@ export const siteContent = {
   description:
     "Located on ten acres with spacious treed lawn, outdoor deck, play area, heated swimming pool, and heated whirlpool. Features a century farmhouse and three two-bedroom executive cottages.",
   license: "PEI Lic # 2200013",
-  rating: "Canada Select 3.5 Stars",
   contact: {
     email: "bluewaterscottages@gmail.com",
-    phonePrimary: "902-672-2720",
-    phoneSecondary: "902-940-7074",
     address: {
       streetAddress: "3694 Brackley Point Road",
       addressLocality: "Brackley Beach",
@@ -28,7 +25,6 @@ export const siteContent = {
     "15 km from airport and Charlottetown",
     "40 minutes from Confederation Bridge",
     "Short drive to National Park beaches",
-    "Canada Select 3.5 Stars",
   ],
 };
 

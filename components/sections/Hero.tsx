@@ -24,7 +24,7 @@ export function Hero() {
           ))}
         </ul>
         <p className="mt-4 text-xs text-muted-foreground">
-          {siteContent.license} · {siteContent.rating}
+          {siteContent.license}
         </p>
       </div>
     </section>
