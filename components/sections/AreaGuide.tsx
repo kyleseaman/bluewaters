@@ -13,7 +13,7 @@ export function AreaGuide() {
         <div className="mt-6 overflow-hidden rounded-xl border border-border">
           <iframe
             title="Blue Waters Cottages location"
-            src={`https://maps.google.com/maps?q=${encodeURIComponent("3694 Brackley Point Road, Brackley Beach, PE C1E 2P2, Canada")}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
             width="100%"
             height="400"
             style={{ border: 0 }}
