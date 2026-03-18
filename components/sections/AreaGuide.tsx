@@ -13,7 +13,7 @@ export function AreaGuide() {
         <div className="mt-6 overflow-hidden rounded-xl border border-border">
           <iframe
             title="Blue Waters Cottages location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.5!2d-63.1842!3d46.3547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5e52d0a47c0d5d%3A0x2e8e0c0a6b0a0b0a!2s3694+Brackley+Point+Rd%2C+Brackley+Beach%2C+PE+C1E+2N3%2C+Canada!5e0!3m2!1sen!2sca!4v1709000000000"
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
             width="100%"
             height="400"
             style={{ border: 0 }}

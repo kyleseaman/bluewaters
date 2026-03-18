@@ -5,7 +5,7 @@ export const faqs = [
   },
   {
     question: "When are you open?",
-    answer: "Our operating season is June 1 through October 17.",
+    answer: "Our operating season is June 13 through October 10.",
   },
   {
     question: "Do cottages have a kitchen?",

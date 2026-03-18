@@ -1,5 +1,5 @@
 export const rates = {
-  season: "2025 Season",
+  season: "2026 Season",
   note: "Please contact us for availability.",
   lines: [
     { label: "In-Season", amount: "$1,595/week", notes: "June 14 – September 15 (2 guests)" },

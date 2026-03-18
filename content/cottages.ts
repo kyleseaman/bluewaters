@@ -6,6 +6,7 @@ export const cottageFeatures = [
   "Microwave oven",
   "Whirlpool tub",
   "Gas barbecue",
+  "Pastoral and bay views",
   "Covered verandah",
   "Picnic table",
   "High speed internet",
