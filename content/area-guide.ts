@@ -5,11 +5,11 @@ export const areaGuide = [
   },
   {
     title: "Cycling & Trails",
-    description: "Bike directly to PEI National Park and explore scenic coastal trails along the North Shore. Many guests bring their bikes to enjoy the area's excellent cycling routes.",
+    description: "Bike straight into PEI National Park and explore scenic coastal trails along the North Shore. Many guests bring their bikes to enjoy the area's excellent cycling routes.",
   },
   {
     title: "Dining & Charlottetown",
-    description: "Reach local seafood spots and Charlottetown restaurants in a short drive.",
+    description: "Enjoy local seafood spots and Charlottetown restaurants just a short drive away.",
   },
   {
     title: "Golf & Attractions",
