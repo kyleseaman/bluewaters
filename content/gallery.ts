@@ -7,6 +7,7 @@ export const cottageImages = [
   { src: "/photos/cottages/c7.webp", alt: "Clean bathroom with vanity, shower, and natural light", width: 900, height: 1200 },
   { src: "/photos/cottages/c8.webp", alt: "Spacious living room with sofa, coastal art, and TV", width: 1200, height: 900 },
   { src: "/photos/cottages/c9.webp", alt: "Bedroom with queen bed and bedside lamps", width: 1200, height: 900 },
+  { src: "/photos/cottages/c11.webp", alt: "View from verandah across lawn with picnic table and playground", width: 1200, height: 900 },
 ];
 
 export const poolImages = [
@@ -14,4 +15,5 @@ export const poolImages = [
   { src: "/photos/pool/p2.webp", alt: "Heated in-ground pool with ladder on a sunny day", width: 900, height: 1200 },
   { src: "/photos/pool/p3.webp", alt: "Hot tub and pool area with wood deck and patio furniture", width: 900, height: 1200 },
   { src: "/photos/pool/p4.webp", alt: "Wide view of the pool surrounded by trees and deck chairs", width: 900, height: 1200 },
+  { src: "/photos/pool/p5.webp", alt: "Pool house restroom with white siding and covered entrance", width: 1206, height: 2113 },
 ];
