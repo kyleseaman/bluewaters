@@ -7,6 +7,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Highlights } from "@/components/sections/Highlights";
 import { Pool } from "@/components/sections/Pool";
 import { RatesSeason } from "@/components/sections/RatesSeason";
+import { Availability } from "@/components/sections/Availability";
 import { Header } from "@/components/ui/Header";
 import { faqSchema, lodgingSchema } from "@/lib/schema";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
+      <Availability />
       <main>
         <Hero />
         <Highlights />
