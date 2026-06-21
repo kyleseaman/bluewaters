@@ -5,7 +5,7 @@ Modern marketing site rebuild for Blue Waters Executive Cottages.
 ## Tech
 - Next.js App Router + TypeScript
 - Static-first rendering
-- Client interactivity for sticky header, gallery lightbox, and contact form UX
+- Client interactivity for the sticky header and gallery lightbox
 
 ## Run locally
 
@@ -31,7 +31,7 @@ bun run build
 - Interactive gallery with lightbox
 - Location/area guide with map link
 - FAQ
-- Contact block with email/phone + inquiry form
+- Contact block with email, address, and season details
 
 ## SEO and platform details
 - Homepage metadata (title/description/open graph)

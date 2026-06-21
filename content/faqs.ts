@@ -13,6 +13,6 @@ export const faqs = [
   },
   {
     question: "How do I check availability?",
-    answer: "Call, email, or send the inquiry form and we’ll respond with options as quickly as possible.",
+    answer: "Call or email us and we’ll respond with options as quickly as possible.",
   },
 ];

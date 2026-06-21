@@ -1,6 +1,6 @@
 # Implementation Notes
 
-This repository now contains the fully implemented Next.js experience (single-page marketing site) with production-ready SEO/accessibility baseline and interactive UX.
+This repository now contains the fully implemented Next.js experience (single-page marketing site) with a production-ready SEO and accessibility baseline plus lightweight interactive UX.
 
 ## Implemented architecture
 
@@ -15,13 +15,13 @@ This repository now contains the fully implemented Next.js experience (single-pa
 - Complete one-page conversion flow (hero → contact).
 - Sticky header and smooth in-page navigation.
 - Interactive lightbox gallery.
-- Contact form UX with success state.
+- Contact section with streamlined availability details.
 - `/home` permanent redirect to `/`.
 - SEO metadata + robots + sitemap + structured data.
 
 ## Next enhancements (optional)
 
-- Connect contact form to email provider/API route for true delivery.
+- Add a booking inquiry workflow if direct lead capture is needed later.
 - Replace placeholder gallery images with finalized photography.
 - Add analytics event tracking for CTA and inquiry funnel.
 - Add dedicated route pages (`/gallery`, `/rates`, `/contact`) if needed.
